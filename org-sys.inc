@@ -53,10 +53,10 @@ static ORG_Data[ORG:MAX_ORGS][E_ORG_DATA];
 static Alloc:ORG_RankName[ORG:MAX_ORGS][ORGRank:MAX_ORG_RANKS];
 static Alloc:ORG_MemberName[ORG:MAX_ORGS][ORGMember:MAX_ORG_MEMBERS];
 
-static Iterator:ORGs<MAX_ORGS>;
-static Iterator:ORGRanks<MAX_ORGS, MAX_ORG_RANKS>;
-static Iterator:ORGMembers<MAX_ORGS, MAX_ORG_MEMBERS>;
-static Iterator:ORGVehicles<MAX_ORGS, MAX_ORG_VEHICLES>;
+new Iterator:ORGs<MAX_ORGS>;
+new Iterator:ORGRanks<MAX_ORGS, MAX_ORG_RANKS>;
+new Iterator:ORGMembers<MAX_ORGS, MAX_ORG_MEMBERS>;
+new Iterator:ORGVehicles<MAX_ORGS, MAX_ORG_VEHICLES>;
 
 // functions
 
