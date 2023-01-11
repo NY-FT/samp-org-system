@@ -12,10 +12,10 @@
 
 #define MAX_ORGS                    10
 
-#define MAX_ORG_NAME                32
+#define MAX_ORG_NAME                64
 #define MAX_ORG_TAG                 4
 #define ORG_COLOR_LENGHT            6
-#define MAX_ORG_RANK_NAME           16
+#define MAX_ORG_RANK_NAME           32
 
 #define MAX_ORG_MEMBERS             25
 #define MAX_ORG_RANKS               15
