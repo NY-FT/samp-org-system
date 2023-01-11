@@ -7,7 +7,6 @@
 
 #include <YSI_Data\y_iterate>
 #include <YSI_Coding\y_malloc>
-#include <YSI_Visual\y_commands>
 
 // defines
 
