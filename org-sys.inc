@@ -68,10 +68,10 @@ stock ORG:ORG_Create()
         return INVALID_ORG_ID;
     }
 
-    format(ORG_Data[id][E_ORG_NAME], MAX_ORG_NAME, INVALID_ORG_NAME);
-    format(ORG_Data[id][E_ORG_TAG], MAX_ORG_TAG, INVALID_ORG_TAG);
-    format(ORG_Data[id][E_ORG_COLOR], ORG_COLOR_LENGHT, INVALID_ORG_COLOR);
-    format(ORG_Data[id][E_ORG_LEADER], MAX_PLAYER_NAME, INVALID_ORG_LEADER);
+    format(ORG_Data[id][E_ORG_NAME], MAX_ORG_NAME+1, INVALID_ORG_NAME);
+    format(ORG_Data[id][E_ORG_TAG], MAX_ORG_TAG+1, INVALID_ORG_TAG);
+    format(ORG_Data[id][E_ORG_COLOR], ORG_COLOR_LENGHT+1, INVALID_ORG_COLOR);
+    format(ORG_Data[id][E_ORG_LEADER], MAX_PLAYER_NAME+1, INVALID_ORG_LEADER);
 
     return id;
 }
