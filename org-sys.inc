@@ -1,7 +1,7 @@
-#if defined _INC_DYN_ORGS_INCLUDED
+#if defined _INC_ORG_SYS_INCLUDED
 	#endinput
 #endif
-#define _INC_DYN_ORGS_INCLUDED
+#define _INC_ORG_SYS_INCLUDED
 
 #include <open.mp>
 
