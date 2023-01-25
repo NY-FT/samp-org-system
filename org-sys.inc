@@ -358,7 +358,7 @@ stock ORG_RemoveRank(ORG:id, ORGRank:index)
     if(!Iter_Contains(ORGs, _:id)) {
         return false;
     }
-\
+
     if(!(0 <= _:index < MAX_ORG_RANKS)) {
         return false;
     }
