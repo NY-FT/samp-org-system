@@ -76,14 +76,14 @@ stock ORG:ORG_Create()
     return id;
 }
 
-stock ORG_Destroy(ORG:id)
+stock bool:ORG_Destroy(ORG:id)
 {
     if(!(0 <= _:id < MAX_ORGS)) {
-        return 0;
+        return false;
     }
 
     if(!Iter_Contains(ORGs, _:id)) {
-        return 0;
+        return false;
     }
 
     ORG_Data[id][E_ORG_NAME][0]     = '\0';
@@ -117,7 +117,7 @@ stock ORG_Destroy(ORG:id)
 
     Iter_Remove(ORGs, _:id);
 
-    return 1;
+    return true;
 }
 
 stock bool:ORG_IsValid(ORG:id) 
