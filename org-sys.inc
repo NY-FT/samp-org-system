@@ -358,7 +358,7 @@ stock ORG_RemoveRank(ORG:id, ORGRank:index)
     if(!Iter_Contains(ORGs, _:id)) {
         return false;
     }
-
+\
     if(!(0 <= _:index < MAX_ORG_RANKS)) {
         return false;
     }
@@ -367,7 +367,7 @@ stock ORG_RemoveRank(ORG:id, ORGRank:index)
         return false;
     }
 
-    ORG_RankName[id][index] = Malloc_NewS(INVALID_ORG_RANK);
+    ORG_RankName[id][index][0] = '\0';
 
     Iter_Remove(ORGRanks<_:id>, _:index);
 
@@ -453,7 +453,7 @@ stock ORG_RemoveMember(ORG:id, ORGMember:index)
         return false;
     }
 
-    ORG_MemberName[id][index] = Malloc_NewS(INVALID_ORG_MEMBER);
+    ORG_MemberName[id][index][0] = '\0';
 
     Iter_Remove(ORGMembers<_:id>, _:index);
 
