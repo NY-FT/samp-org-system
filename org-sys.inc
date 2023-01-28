@@ -345,7 +345,6 @@ stock ORGRank:ORG_AddRank(ORG:id, const value[])
     }
 
     ORG_RankName[id][index] = Malloc_NewS(value);
-
     return index;
 }
 
@@ -370,7 +369,7 @@ stock ORG_RemoveRank(ORG:id, ORGRank:index)
     ORG_RankName[id][index][0] = '\0';
 
     Iter_Remove(ORGRanks<_:id>, _:index);
-
+    
     return true;
 }
 
@@ -431,7 +430,6 @@ stock ORGMember:ORG_AddMember(ORG:id, const value[])
     }
 
     ORG_MemberName[id][index] = Malloc_NewS(value);
-
     return index;
 }
 
@@ -521,7 +519,6 @@ stock ORGVehicle:ORG_AddVehicle(ORG:id, vehicleid)
     }
 
     ORG_Data[id][E_ORG_VEHICLEID][index] = vehicleid;
-
     return index;
 }
 
