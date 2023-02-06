@@ -20,12 +20,12 @@ native bool:ORG_SetMaxVehicles(ORG:id, value);
 native ORG_GetMaxVehicles(ORG:id);
 
 native ORGRank:ORG_AddRank(ORG:id, const value[]);
-native ORG_RemoveRank(ORG:id, ORGRank:index);
+native bool:ORG_RemoveRank(ORG:id, ORGRank:index);
 native bool:ORG_SetRank(ORG:id, ORGRank:index, const value[]);
 native ORG_GetRank(ORG:id, ORGRank:index);
 
 native ORGMember:ORG_AddMember(ORG:id, const value[]);
-native ORG_RemoveMember(ORG:id, ORGMember:index);
+native bool:ORG_RemoveMember(ORG:id, ORGMember:index);
 native bool:ORG_SetMember(ORG:id, ORGMember:index, const value[]);
 native ORG_GetMember(ORG:id, ORGMember:index);
 
