@@ -29,7 +29,7 @@ native bool:ORG_RemoveMember(ORG:id, ORGMember:index);
 native bool:ORG_SetMember(ORG:id, ORGMember:index, const value[]);
 native ORG_GetMember(ORG:id, ORGMember:index);
 
-native bool:ORG_RemoveVehicle(ORG:id, ORGVehicle:index);
 native bool:ORG_SetVehicle(ORG:id, ORGVehicle:index, vehicleid);
+native bool:ORG_RemoveVehicle(ORG:id, ORGVehicle:index);
 native ORG_GetVehicle(ORG:id, ORGVehicle:index);
 ```
