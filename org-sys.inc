@@ -348,7 +348,7 @@ stock ORGRank:ORG_AddRank(ORG:id, const value[])
     return index;
 }
 
-stock ORG_RemoveRank(ORG:id, ORGRank:index)
+stock bool:ORG_RemoveRank(ORG:id, ORGRank:index)
 {
     if(!(0 <= _:id < MAX_ORGS)) {
         return false;
@@ -433,7 +433,7 @@ stock ORGMember:ORG_AddMember(ORG:id, const value[])
     return index;
 }
 
-stock ORG_RemoveMember(ORG:id, ORGMember:index)
+stock bool:ORG_RemoveMember(ORG:id, ORGMember:index)
 {
     if(!(0 <= _:id < MAX_ORGS)) {
         return false;
